@@ -1,5 +1,8 @@
 # 一个调用ffmpeg批量将视频重封装入`.mp4`格式容器的脚本
-**食用方法**：首先，你需要一个**ffmpeg**，Linux直接安装，Windows的话把`ffmpeg.exe`和视频放在一起。将`flv2mp4.py`和视频放在同一目录下，运行。
+**食用方法**：
+- 首先，安装**ffmpeg**和**python**，具体方法请搜索。
+- 其次，下载将`flv2mp4.py`或`flv2mp3.py`，将其放在flv视频所在文件夹
+- 打开终端（CMD/PowerShell 或终端），进入脚本所在目录，运行：`python flv_to_mp4.py`或者`python flv_to_mp4.py`
 
 ps:
 - 写这个东西是因为从视频网站上下载的很多视频（如BILIBILI)为`.flv`，但容器内视频流实际上是H264，完全可以封装成`.mp4`，且在手机上flv不能硬解，而mp4能。
