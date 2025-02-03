@@ -28,6 +28,8 @@ def convert_flv_to_mp3(root_dir):
                     print(f'错误信息: {e.stderr}')
 
 if __name__ == '__main__':
-    target_dir = r''d:\Users\Administrator\Downloads\flv视频'  # 替换为你的实际路径
-    convert_flv_to_mp3(target_dir)
+    # 获取脚本所在目录
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    print(f"目标目录: {script_dir}")
+    convert_flv_to_mp4(script_dir)
     print("全部转换完成！")
